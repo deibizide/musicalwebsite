@@ -89,9 +89,85 @@ body {
 /* MEDIA QUERIES */
 /* ///////////// */
 
+/* SMALLER DESTKTOP SCREEN */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .left-nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .right-nav {
+        margin: 60px;
+    }
+
+    .right-nav a {
+        margin: 10px;
+        padding: 5px 5px;
+    }
+
+    .main-font-awesome a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .main-nav {
+        display: flex;
+    }
+
+    .left-nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .right-nav a {
+        margin: 5px;
+        padding: 5px 5px;
+    }
+
+    .main-font-awesome a {
+        font-size: 15px;
+    }
+}
+
+/* IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .left-nav {
+        width: 30%;
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .right-nav a {
+        padding: 15px 25px;
+    }
+
+    .main-font-awesome {
+        position: relative;
+        right: 40%;
+        margin-top: 40px;
+    }
+
+    .main-font-awesome a {
+        display: inline-flex;
+    }
+}
+
 /* SMART-PHONES */
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 400px) and (max-width: 767px) {
     .hb-button {
         display: inline;
         margin-left: 5px;
