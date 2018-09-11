@@ -4,4 +4,6 @@ $(".hb-button").on("click", function(e) {
     $(".right-nav").animate({ "margin-left": leftPx < 0 ? 0 : -200 }, "slow");
     $(".hb-button").animate({ "margin-left": leftPx < 0 ? 240 : 25 }, "slow");
     $(".hb-button > i").toggleClass("hide");
+    $(".square-box").toggleClass("hide");
+
 });

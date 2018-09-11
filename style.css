@@ -4,6 +4,16 @@
 
 body {
     margin: 0;
+    height: 100%;
+}
+
+html {
+    background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
 }
 
 /*//////*/
@@ -18,8 +28,8 @@ body {
     font-family: Cabin, sans-serif;
     font-size: 12px;
     font-weight: 400;
-    height: 80px;
     -webkit-font-smoothing: antialiased;
+    height: 80px;
     color: #ffffff;
 }
 
@@ -85,12 +95,136 @@ body {
     flex-direction: row;
 }
 
-/* ///////////// */
-/* MEDIA QUERIES */
-/* ///////////// */
+/*/////////*/
+/*MAIN-PAGE*/
+/*/////////*/
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83.6vh;
+    /* align-items: center;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+}
+
+.square-box {
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    width: 350px;
+    height: 350px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 219, 219, 0.3);
+    color: white;
+}
+
+.vertical {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(0, 0, 0, 0) 50%, #aaaa 50.3%);
+}
+
+.programmer h1 {
+    transform: rotate(45deg);
+    margin-top: 130px;
+    color: black;
+}
+
+.musician h1 {
+    transform: rotate(45deg);
+    margin-left: 115px;
+    margin-top: 53px;
+}
+
+/*///////////*/
+/*SCROLL.DOWN*/
+/*///////////*/
+
+.main-scroll {
+    display: flex;
+    justify-content: center;
+    margin-left: 160px;
+}
+
+.scroll-to-content {
+    /* position: absolute;
+    left: 50%;
+    bottom: 0; */
+    margin: 0 auto;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid #aaaa;
+}
+
+.scroll-to-content i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 80px;
+    color: white;
+}
+
+.scroll-to-content:hover {
+    border-bottom: 80px solid black;
+}
+
+/*//////*/
+/*ALBUMS*/
+/*/////*/
+
+.albums {
+    width: 100%;
+    background-color: black;
+}
+
+.albums h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /*keeps the arrow attach to the albums div */
+    color: white;
+    padding: 60px;
+}
+
+.albums img {
+    width: 300px;
+    height: 300px;
+    margin: 0px 105px 60px 105px;
+}
+
+.both-albums {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.phanerozoic,
+.obsidian,
+.rhyacian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ///////////// */ /* ///////////// */ /* ///////////// */
+/* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
+/* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
+/* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
+/* ///////////// */ /* ///////////// */ /* ///////////// */
 
 /* SMALLER DESTKTOP SCREEN */
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .left-nav {
         display: flex;
         justify-content: flex-start;
@@ -101,15 +235,15 @@ body {
     }
 
     .right-nav a {
-        margin: 10px;
-        padding: 5px 5px;
+        padding: 10px 10px;
     }
 
     .main-font-awesome a {
+        margin: 0 auto;
         font-size: 20px;
     }
 }
-
+/* SMALLER DESTKTOP SCREEN */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .main-nav {
         display: flex;
@@ -121,12 +255,12 @@ body {
     }
 
     .right-nav a {
-        margin: 5px;
-        padding: 5px 5px;
+        padding: 10px 10px;
     }
 
     .main-font-awesome a {
         font-size: 15px;
+        padding: 0px 7px;
     }
 }
 
@@ -163,11 +297,30 @@ body {
     .main-font-awesome a {
         display: inline-flex;
     }
+
+    /*//////*/
+    /*ALBUMS*/
+    /*//////*/
+
+    .both-albums {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .albums img {
+        width: 50%;
+        height: 50%;
+        margin: 30px;
+    }
 }
 
 /* SMART-PHONES */
 
 @media only screen and (min-width: 400px) and (max-width: 767px) {
+    /*//////*/
+    /*NAV-BAR*/
+    /*//////*/
     .hb-button {
         display: inline;
         margin-left: 5px;
@@ -193,13 +346,14 @@ body {
 
     .right-nav {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         margin-left: -200px;
         flex-direction: column;
         width: 200px;
         background-color: #b9af7c;
+        z-index: 1;
     }
 
     .right-nav a {
@@ -222,6 +376,18 @@ body {
         margin: 20px;
     }
 
+    .main-font-awesome i {
+        font-size: 25px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hide::before {
+        display: none;
+    }
+
     .main-font-awesome {
         display: flex;
         flex-direction: row;
@@ -230,12 +396,33 @@ body {
         width: 100%;
         margin-bottom: 30%;
     }
-
-    .main-font-awesome i {
-        font-size: 25px;
+    /*/////////*/
+    /*MAIN-PAGE*/
+    /*/////////*/
+    .main-page {
+        height: 90vh;
     }
 
-    .hide::before {
+    /*//////*/
+    /*SCROLL*/
+    /*//////*/
+    .scroll-to-content {
         display: none;
+    }
+
+    /*//////*/
+    /*ALBUMS*/
+    /*//////*/
+
+    .both-albums {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .albums img {
+        width: 80%;
+        height: 80%;
+        margin: 50px;
     }
 }
