@@ -5,5 +5,13 @@ $(".hb-button").on("click", function(e) {
     $(".hb-button").animate({ "margin-left": leftPx < 0 ? 240 : 25 }, "slow");
     $(".hb-button > i").toggleClass("hide");
     $(".square-box").toggleClass("hide");
-
 });
+
+
+
+$(function() {
+   $('.scroll-to-content').click (function() {
+     $('html, body').animate({scrollTop: $('div.both-albums').offset().top }, 'slow');
+     return false;
+   });
+ });
