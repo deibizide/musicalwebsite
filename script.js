@@ -1,3 +1,6 @@
+////////////////////////
+// RESPONSIVE NAV-BAR //
+////////////////////////
 $(".hb-button").on("click", function(e) {
     e.preventDefault();
     var leftPx = parseInt($(".right-nav").css("margin-left"), 10);
@@ -7,11 +10,15 @@ $(".hb-button").on("click", function(e) {
     $(".square-box").toggleClass("hide");
 });
 
-
-
+///////////////////
+// SMOOTH SCROLL //
+///////////////////
 $(function() {
-   $('.scroll-to-content').click (function() {
-     $('html, body').animate({scrollTop: $('div.both-albums').offset().top }, 'slow');
-     return false;
-   });
- });
+    $(".scroll-to-content").click(function() {
+        $("html, body").animate(
+            { scrollTop: $("div.albums").offset().top },
+            "slow"
+        );
+        return false;
+    });
+});
