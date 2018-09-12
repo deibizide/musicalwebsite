@@ -24,7 +24,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(16, 16, 16, 0.9);
+    background-color: rgb(16, 16, 16);
     font-family: Cabin, sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -382,6 +382,47 @@ footer {
     height: 50px;
     font-weight: 150;
 }
+/* ///////////// */ /* ABOUT */ /* ///////////// */
+/* ///////////// */ /* ABOUT */ /* ///////////// */
+/* ///////////// */ /* ABOUT */ /* ///////////// */
+/* ///////////// */ /* ABOUT */ /* ///////////// */
+/* ///////////// */ /* ABOUT */ /* ///////////// */
+
+.main-bio {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+.bio {
+    margin-left: 20%;
+    padding: 100px;
+}
+.bio-and-pictures {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.bio-pictures img {
+    width: 350px;
+    height: 200px;
+    margin: 30px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
 
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
@@ -411,6 +452,18 @@ footer {
 
     .main-portfolio {
         height: 100%;
+    }
+    /*///// */
+    /* BIO */
+    /* ////// */
+    .bio {
+        margin-left: 10%;
+        margin-top: 5%;
+        padding: 60px;
+    }
+
+    .bio-pictures {
+        margin-right: 10%;
     }
 }
 /* SMALLER DESTKTOP SCREEN */
@@ -469,6 +522,17 @@ footer {
         margin: 0 auto;
         width: 70%;
         margin-bottom: 40px;
+    }
+    /*///// */
+    /* BIO */
+    /* ////// */
+    .bio {
+        margin-left: 10%;
+        padding: 10px;
+    }
+
+    .bio-pictures {
+        margin-right: 10%;
     }
 }
 
@@ -551,6 +615,28 @@ footer {
         width: 80%;
         margin-bottom: 40px;
     }
+    /*//////// */
+    /* BIO */
+    /*/////// */
+
+    .bio {
+        margin: 0 auto;
+        padding: 50px;
+    }
+    .bio-and-pictures {
+        display: inline;
+    }
+
+    .bio-pictures {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .bio-pictures img {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 /* SMART-PHONES */
@@ -571,6 +657,9 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
     }
 
     .left-nav {
@@ -718,5 +807,28 @@ footer {
         margin: 0 auto;
         width: 90%;
         margin-bottom: 40px;
+    }
+
+    /*//////// */
+    /* BIO */
+    /*/////// */
+
+    .bio {
+        margin: 0 auto;
+        padding: 50px;
+    }
+    .bio-and-pictures {
+        display: inline;
+    }
+
+    .bio-pictures {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .bio-pictures img {
+        width: 80%;
+        height: 80%;
     }
 }
