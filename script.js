@@ -21,4 +21,11 @@ $(function() {
         );
         return false;
     });
+    $(".portfolio-scroll").click(function() {
+        $("html, body").animate(
+            { scrollTop: $("div.image-container").offset().top },
+            "slow"
+        );
+        return false;
+    });
 });

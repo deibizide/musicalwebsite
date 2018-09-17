@@ -7,7 +7,7 @@ body {
     height: 100%;
 }
 
-html {
+.image-background {
     background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,7 +30,14 @@ html {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     height: 80px;
+}
+.main-nav a {
+    text-decoration: none;
     color: #ffffff;
+}
+
+.main-nav a:hover {
+    color: #b9af7c;
 }
 
 .left-nav {
@@ -93,6 +100,42 @@ html {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.dropdown i {
+    margin-left: 7px;
+}
+.dropdown:hover {
+    color: #b9af7c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b9af7c;
+    margin-top: 60px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    width: 100%;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*/////////*/
@@ -424,11 +467,245 @@ footer {
     margin-bottom: 100px;
 }
 
+/* ///////////// */ /* SHOWS */ /* ///////////// */
+/* ///////////// */ /* SHOWS */ /* ///////////// */
+/* ///////////// */ /* SHOWS */ /* ///////////// */
+/* ///////////// */ /* SHOWS */ /* ///////////// */
+/* ///////////// */ /* SHOWS */ /* ///////////// */
+
+.main-shows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+}
+
+.shows {
+    height: 150vh;
+}
+
+/* ///////////// */ /* PORTFOLIO */ /* ///////////// */
+/* ///////////// */ /* PORTFOLIO */ /* ///////////// */
+/* ///////////// */ /* PORTFOLIO */ /* ///////////// */
+/* ///////////// */ /* PORTFOLIO */ /* ///////////// */
+/* ///////////// */ /* PORTFOLIO */ /* ///////////// */
+
+.main-header {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16, 16, 16);
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+
+.header p {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    text-align: justify;
+}
+
+.portfolio-scroll {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.portfolio-scroll i {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.image-portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 60px;
+}
+
+/* COLOR-CONTAINER */
+.container-white {
+    background-color: white;
+}
+.container-grey {
+    background-color: #757474;
+}
+/* INFO(CSS,JS,VUE.JS ETC...) */
+.image-container:hover .project-description {
+    margin-top: 60px;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 33.2%;
+    height: 50px;
+    text-align: center;
+}
+
+/* BIGGER PICTURE */
+.image-container:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.project-description {
+    display: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    -webkit-transform: scale(1.5);
+    transform: scale(0.9);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+/* ///////////// */ /* MUSICIAN */ /* ///////////// */
+/* ///////////// */ /* MUSICIAN */ /* ///////////// */
+/* ///////////// */ /* MUSICIAN */ /* ///////////// */
+/* ///////////// */ /* MUSICIAN */ /* ///////////// */
+/* ///////////// */ /* MUSICIAN */ /* ///////////// */
+
+.main-musician-page {
+    background-color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.lessons-header {
+    text-transform: uppercase;
+}
+
+.lessons-header h1 {
+    margin-top: 0px;
+    text-align: center;
+    /* border-top: 1px solid #9a9a9a;
+    border-bottom: 1px solid #9a9a9a; */
+    padding: 40px 0 20px 0;
+}
+
+.main-section-lessons {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.guitar-lessons-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: justify;
+}
+.guitar-lessons-column h1 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.lessons p {
+    margin-top: 5px;
+}
+
+.ethos p {
+    width: 60%;
+    line-height: 1.5rem;
+}
+
+.guitar-lessons-column img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 1px grey;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+.testimony p {
+    width: 60%;
+}
+
+/* ///////////// */ /* CONTACT */ /* ///////////// */
+/* ///////////// */ /* CONTACT */ /* ///////////// */
+/* ///////////// */ /* CONTACT */ /* ///////////// */
+/* ///////////// */ /* CONTACT */ /* ///////////// */
+/* ///////////// */ /* CONTACT */ /* ///////////// */
+.book p {
+    color: #b9af7c;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    width: 100px;
+    align-items: center;
+    margin: 0 auto;
+}
+.book {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 360px 50px 0 50px;
+}
+
+.book input {
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #b9af7c;
+}
+
+.button:hover {
+    background-color: #b9af7c;
+    border: 1px solid #b9af7c;
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
 /* ///////////// */ /* MEDIA QUERIES */ /* ///////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
 
 /* SMALLER DESTKTOP SCREEN */
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -453,6 +730,11 @@ footer {
     .main-portfolio {
         height: 100%;
     }
+
+    .dropdown-content {
+        margin-top: 55px;
+    }
+
     /*///// */
     /* BIO */
     /* ////// */
@@ -484,6 +766,10 @@ footer {
     .main-font-awesome a {
         font-size: 15px;
         padding: 0px 7px;
+    }
+
+    .dropdown-content {
+        margin-top: 50px;
     }
 
     /*//////*/
@@ -534,6 +820,14 @@ footer {
     .bio-pictures {
         margin-right: 10%;
     }
+
+    /* //////////// */
+    /* MY PORTFOLIO */
+    /* //////////// */
+
+    .header p {
+        width: 100%;
+    }
 }
 
 /* IPAD */
@@ -554,6 +848,7 @@ footer {
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
+        margin-left: 12%;
     }
 
     .right-nav a {
@@ -562,12 +857,16 @@ footer {
 
     .main-font-awesome {
         position: relative;
-        right: 40%;
+        right: 50%;
         margin-top: 40px;
     }
 
     .main-font-awesome a {
         display: inline-flex;
+    }
+
+    .dropdown {
+        z-index: 1;
     }
 
     /*//////*/
@@ -636,6 +935,23 @@ footer {
     .bio-pictures img {
         width: 80%;
         height: 80%;
+    }
+
+    /* //////////// */
+    /* MY PORTFOLIO */
+    /* //////////// */
+
+    .header p {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container:hover .project-description {
+        width: 100%;
     }
 }
 
@@ -723,6 +1039,30 @@ footer {
         width: 100%;
         margin-bottom: 30%;
     }
+
+    .dropdown {
+        display: initial;
+    }
+
+    .dropdown i {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: inherit;
+        margin: 0 auto;
+    }
+
+    .dropdown-content a {
+        margin-left: 30px;
+        text-transform: uppercase;
+    }
+    .dropdown-content a:hover {
+        background-color: #b9af7c;
+        width: 80%;
+    }
+
     /*/////////*/
     /*MAIN-PAGE*/
     /*/////////*/
@@ -830,5 +1170,50 @@ footer {
     .bio-pictures img {
         width: 80%;
         height: 80%;
+    }
+
+    /* //////////// */
+    /* MY PORTFOLIO */
+    /* //////////// */
+
+    .header p {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container:hover .project-description {
+        width: 100%;
+    }
+
+    /* ///////////// */ /* MUSICIAN */ /* ///////////// */
+    /* ///////////// */ /* MUSICIAN */ /* ///////////// */
+    /* ///////////// */ /* MUSICIAN */ /* ///////////// */
+    /* ///////////// */ /* MUSICIAN */ /* ///////////// */
+    /* ///////////// */ /* MUSICIAN */ /* ///////////// */
+
+    .lessons-header h1 {
+        width: 90%;
+    }
+
+    .main-section-lessons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        margin: 50px 50px 0 50px;
+    }
+
+    .teaching-ethics {
+        width: 100%;
+    }
+
+    .teaching-ethics img {
+        width: 100%;
     }
 }
