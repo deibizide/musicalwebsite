@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="shortcut icon" type="image/png" href="images/cross-min.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
 
 <title>David R.&Aring;hfeldt</title>
@@ -16,7 +18,7 @@
         <!---NAVBAR --->
         <div class="main-nav">
             <div class="left-nav">
-                <a href="index.html">
+                <a href="/">
                 <h1>David R.&Aring;hfeldt</h1></a>
             </div>
 
@@ -26,18 +28,18 @@
             </button>
                 <div class="right-nav">
                     <div class="links">
-                        <a href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="shows.html">SHOWS</a>
+                        <a href="/">HOME</a>
+                        <a href="about">ABOUT</a>
+                        <a href="shows">SHOWS</a>
                             <div class="dropdown">
                                 <a>SERVICES<i class="fas fa-caret-down"></i></a>
                                    <div class="dropdown-content">
-                                     <a href="portfolio.html">Web Development</a>
-                                     <a href="musician.html">Music</a>
+                                     <a href="portfolio">Web Development</a>
+                                     <a href="musician">Music</a>
                                     </div>
                             </div>
                         <a href="https://ear-builder.herokuapp.com/">EAR TRAINING</a>
-                        <a href="contact.html">CONTACT</a>
+                        <a href="contact">CONTACT</a>
                     </div>
                     <div class="main-font-awesome">
                         <a href="https://www.instagram.com/_deibizide_/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -49,18 +51,31 @@
         </div>
         <!---MAIN-MUSICIAN PAGE --->
 
-                <div class="book">
-                    <h1>Book Now!</h1>
-                    <h3>Name</h3>
-                    <input type="Name" name="" value="">
-                    <h3>Email</h3>
-                    <input type="Email" name="" value="">
-                    <h3>Ability (Beginner, Intermediate, Advanced)</h3>
-                    <input type="Level" name="" value="">
-                    <p class="button">Submit</p>
+            <div class="contact-box">
+                <div class="container-contact">
+                    <form id="contact" method="POST" action="https://formspree.io/david@theoceancollective.com">
+                        <h3>Get in touch!</h3>
+                        <h4>Contact me today, and get a reply within 24 hours!</h4>
+                        <fieldset>
+                            <label>
+                                <input class="email"  placeholder="Your Email Address" name="email" type="email" name="email" tabindex="2" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label>
+                                <input placeholder="Subject" type="text" name="subject" class="subject">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5" class="message" name="message" required></textarea>
+                        </fieldset>
+                        <div class="status"></div>
+                        <fieldset>
+                            <button class="submit" name="button" type="submit" id="contact-submit" data-submit="...Sending" name="button">Submit</button>
+                        </fieldset>
+                    </form>
                 </div>
-
-
+            </div>
 
 
 
