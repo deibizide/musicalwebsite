@@ -26,6 +26,9 @@ app.get("/contact", function(req, res) {
 app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname + "/about.html"));
 });
+app.get("/past-shows", function(req, res) {
+    res.sendFile(path.join(__dirname + "/past-shows.html"));
+});
 
 app.listen(process.env.PORT || 8080, () =>
     console.log("Listening on port 8080!")

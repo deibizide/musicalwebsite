@@ -35,16 +35,46 @@ $(function() {
 ///////////////////
 
 $(document).ready(function() {
-    let tourI = tours["phanerozoicEuropeanTourI"];
+    var d = new Date();
+    var curr_year = d.getFullYear();
+    var curr_Month = d.getMonth() + 1;
+    var curr_date = d.getDate();
+    var todayDate = curr_date + "." + curr_Month + "." + curr_year;
+    let splittedDate;
 
-    for (let i = 0, gigs = tourI.length; i < gigs; i++) {
-        var dates = tourI[i].date;
-        var city = tourI[i].city;
-        var venue = tourI[i].venue;
-        var country = tourI[i].country;
+    for (var tour in tours) {
+        for (let i = 0; i < tours[tour].length; i++) {
+            var dates = tours[tour][i].date;
+            var city = tours[tour][i].city;
+            var venue = tours[tour][i].venue;
+            var country = tours[tour][i].country;
 
-        $("div.shows").append(`
-        <div class="dates"> - ${dates} &#160;&#160; ${city}&#160;&#160; ${venue} &#160;&#160;${country}.</div>
-        `);
+            splittedDate = dates.split(".").map(parseFloat);
+
+            if (splittedDate < curr_date) {
+                $(".past-shows").append(`
+              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+            `);
+            } else if (
+                splittedDate[2] === curr_year &&
+                splittedDate[1] < curr_Month
+            ) {
+                $(".past-shows").append(`
+              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+            `);
+            } else if (
+                splittedDate[2] === curr_year &&
+                splittedDate[1] === curr_Month &&
+                splittedDate[0] < curr_date
+            ) {
+                $(".past-shows").append(`
+              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+            `);
+            } else {
+                $(".shows").append(`
+              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+            `);
+            }
+        }
     }
 });
