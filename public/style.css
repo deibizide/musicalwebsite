@@ -417,6 +417,7 @@ footer {
 .bio {
     margin-left: 20%;
     padding: 100px;
+    text-align: justify;
 }
 .bio-and-pictures {
     display: flex;
