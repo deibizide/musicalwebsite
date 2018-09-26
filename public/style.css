@@ -5,8 +5,6 @@
 body {
     margin: 0;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .image-background {
@@ -137,6 +135,10 @@ body {
     display: block;
 }
 
+.right-nav a.mobile-only {
+    display: none;
+}
+
 /*/////////*/
 /*MAIN-PAGE*/
 /*/////////*/
@@ -209,6 +211,7 @@ body {
     width: 100%;
     background-color: #101010;
     font-family: "Quicksand", sans-serif;
+    padding: 100px;
 }
 
 .top-part {
@@ -258,6 +261,7 @@ body {
     flex-direction: column;
     color: #101010;
     font-family: "Quicksand", sans-serif;
+    padding-top: 100px;
 }
 .h1-portfolio h1 {
     display: flex;
@@ -275,6 +279,7 @@ body {
     justify-content: center;
     flex-direction: row;
     margin-top: 50px;
+    padding-bottom: 100px;
 }
 
 .main-portfolio img {
@@ -371,6 +376,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #101010;
+    padding: 100px;
 }
 
 .h1-bottom-part {
@@ -609,7 +615,7 @@ footer {
     display: none;
 }
 
-img {
+.container img {
     width: 150px;
     height: 150px;
     transform: scale(0.9);
@@ -1153,6 +1159,7 @@ fieldset {
     }
 
     .right-nav {
+        padding-top: 30px;
         display: flex;
         position: fixed;
         top: 0;
@@ -1181,7 +1188,7 @@ fieldset {
     }
 
     .links a {
-        margin: 20px;
+        margin: 10px;
     }
 
     .main-font-awesome i {
@@ -1206,7 +1213,7 @@ fieldset {
     }
 
     .dropdown {
-        display: initial;
+        display: none;
     }
 
     .dropdown i {
@@ -1215,7 +1222,6 @@ fieldset {
 
     .dropdown-content {
         display: block;
-        position: inherit;
         margin: 0 auto;
     }
 
@@ -1226,6 +1232,11 @@ fieldset {
     .dropdown-content a:hover {
         background-color: #b9af7c;
         width: 80%;
+    }
+
+    .right-nav a.mobile-only {
+        display: block;
+        text-transform: uppercase;
     }
 
     /*/////////*/
