@@ -630,10 +630,12 @@ footer {
 }
 
 .ethos p {
-    width: 60%;
+    width: 50%;
     line-height: 1.5rem;
 }
-
+.guitar-lessons-p-holder {
+    width: 50%;
+}
 .guitar-lessons-column img {
     width: 300px;
     height: 300px;
@@ -1401,19 +1403,30 @@ fieldset {
     /* ///////////// */ /* MUSICIAN */ /* ///////////// */
     /* ///////////// */ /* MUSICIAN */ /* ///////////// */
 
-    .lessons-header h1 {
-        width: 90%;
+    .guitar-lessons-column h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
 
     .main-section-lessons {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
 
-    .main-section-lessons p {
+    .guitar-lessons-column {
         width: 90%;
     }
+
+    .guitar-lessons-p-holder {
+        width: 90%;
+    }
+
+    .ethos p {
+        width: 100%;
+    }
+
     .testimony p {
         width: 90%;
     }
