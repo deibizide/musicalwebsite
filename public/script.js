@@ -10,6 +10,8 @@ $(".hb-button").on("click", function(e) {
     $(".square-box").toggleClass("hide");
 });
 
+$("body").css({ "overflow-x": "hidden" });
+
 ///////////////////
 // SMOOTH SCROLL //
 ///////////////////

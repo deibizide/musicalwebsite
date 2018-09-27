@@ -10,7 +10,8 @@ body {
 .image-background {
     background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
     background-size: cover;
-    min-height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
 }
 
 /*//////*/
@@ -1132,12 +1133,6 @@ fieldset {
 /* SMART-PHONES */
 
 @media only screen and (min-width: 250px) and (max-width: 767px) {
-    .image-background {
-        background: url(images/DSC_7264black-min-min.jpg) no-repeat center
-            center fixed;
-        background-size: 400px;
-    }
-
     /*//////*/
     /*NAV-BAR*/
     /*//////*/
@@ -1255,8 +1250,8 @@ fieldset {
     }
 
     .square-box {
-        width: 270px;
-        height: 270px;
+        width: 210px;
+        height: 210px;
     }
 
     /*//////*/
