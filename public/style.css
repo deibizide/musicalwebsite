@@ -1133,9 +1133,11 @@ fieldset {
 
 @media only screen and (min-width: 250px) and (max-width: 767px) {
     .image-background {
-        background: url(images/responsive-min.jpg) no-repeat center center fixed;
+        background: url(images/DSC_7264black-min-min.jpg) no-repeat center
+            center fixed;
         background-size: cover;
-        min-height: 100%;
+        background-position: 100% top;
+        overflow-x: hidden;
     }
 
     /*//////*/
@@ -1252,7 +1254,7 @@ fieldset {
     /*MAIN-PAGE*/
     /*/////////*/
     .main-page {
-        height: 90vh;
+        height: 98vh;
     }
 
     .square-box {
@@ -1327,7 +1329,7 @@ fieldset {
         text-transform: uppercase;
         color: #fff;
         border: 1px solid #fff;
-        margin: 40% 0px 0px 50%;
+        margin: 41% 0px 0px 30%;
         background-color: transparent;
         transform: translateY(-200px);
         transition: all 0.2s ease-in-out;
