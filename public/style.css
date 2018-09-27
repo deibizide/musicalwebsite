@@ -7,12 +7,12 @@ body {
     height: 100%;
 }
 
-/* .image-background {
+.image-background {
     background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-} */
+}
 
 /*//////*/
 /*NAV-BAR*/
@@ -1133,6 +1133,14 @@ fieldset {
 /* SMART-PHONES */
 
 @media only screen and (min-width: 250px) and (max-width: 767px) {
+    .image-background {
+        background: url(images/DSC_7264black-min-min.jpg) no-repeat center
+            center fixed;
+        background-size: cover;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+
     /*//////*/
     /*NAV-BAR*/
     /*//////*/
@@ -1162,7 +1170,6 @@ fieldset {
     }
 
     .right-nav {
-        height: 110vh;
         padding-top: 30px;
         display: flex;
         position: fixed;
