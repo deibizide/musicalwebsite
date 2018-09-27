@@ -1162,6 +1162,7 @@ fieldset {
     }
 
     .right-nav {
+        height: 110vh;
         padding-top: 30px;
         display: flex;
         position: fixed;
@@ -1381,12 +1382,20 @@ fieldset {
     /* //////////// */
 
     .header p {
-        width: 100%;
+        width: 380px;
     }
 
     .container {
         display: flex;
         flex-direction: column;
+    }
+    .image-container {
+        padding: 1px;
+        margin-top: 0px;
+    }
+    .project-description {
+        margin-top: 0px;
+        display: block;
     }
 
     .image-container:hover .project-description {
