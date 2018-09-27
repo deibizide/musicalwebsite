@@ -1278,8 +1278,8 @@ fieldset {
     }
 
     .albums img {
-        width: 340px;
-        height: 340px;
+        width: 300px;
+        height: 300px;
         margin: -30px 50px 50px 50px;
     }
 
@@ -1320,21 +1320,19 @@ fieldset {
         font-family: "Quicksand", sans-serif;
     }
 
-    .halo {
+    .link-porfolio-only-mobiles {
         position: absolute;
         text-decoration: none;
         padding: 7px 14px;
         text-transform: uppercase;
         color: #fff;
         border: 1px solid #fff;
-        margin: 50px 0 0 0;
+        margin: 40% 0px 0px 50%;
         background-color: transparent;
         transform: translateY(-200px);
         transition: all 0.2s ease-in-out;
         border: 1px solid black;
         color: black;
-        top: 100px;
-        right: 170px;
     }
 
     .hovereffect {
