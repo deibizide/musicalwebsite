@@ -1270,6 +1270,10 @@ fieldset {
     /*ALBUMS*/
     /*//////*/
 
+    .albums {
+        padding: 40px;
+    }
+
     .both-albums {
         display: flex;
         flex-direction: column;
@@ -1294,16 +1298,18 @@ fieldset {
     }
 
     .h1-portfolio p {
-        margin-left: 10%;
+        text-align: center;
     }
 
     .main-portfolio img {
         width: 250px;
         height: 250px;
+        margin-left: 17%;
     }
     .h1-portfolio {
         display: flex;
         justify-content: center;
+        padding-top: 40px;
     }
 
     .part-one-portfolio,
@@ -1311,6 +1317,7 @@ fieldset {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        padding-bottom: 1px;
     }
 
     .mobile-only {
@@ -1327,7 +1334,7 @@ fieldset {
         text-transform: uppercase;
         color: #fff;
         border: 1px solid #fff;
-        margin: 31% 0px 0px 15%;
+        margin: 31% 0px 0px 20%;
         background-color: transparent;
         transform: translateY(-200px);
         transition: all 0.2s ease-in-out;
