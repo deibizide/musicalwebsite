@@ -1135,9 +1135,7 @@ fieldset {
     .image-background {
         background: url(images/DSC_7264black-min-min.jpg) no-repeat center
             center fixed;
-        background-size: cover;
-        background-position: 100% top;
-        overflow-x: hidden;
+        background-size: 400px;
     }
 
     /*//////*/
@@ -1155,7 +1153,6 @@ fieldset {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        position: fixed;
         width: 100%;
         z-index: 1;
     }
@@ -1317,6 +1314,7 @@ fieldset {
     }
 
     .mobile-only {
+        padding: 50px;
         display: block;
         position: relative;
         font-family: "Quicksand", sans-serif;
@@ -1329,12 +1327,13 @@ fieldset {
         text-transform: uppercase;
         color: #fff;
         border: 1px solid #fff;
-        margin: 41% 0px 0px 30%;
+        margin: 31% 0px 0px 15%;
         background-color: transparent;
         transform: translateY(-200px);
         transition: all 0.2s ease-in-out;
         border: 1px solid black;
         color: black;
+        padding: 30px;
     }
 
     .hovereffect {
