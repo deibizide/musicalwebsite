@@ -115,8 +115,7 @@ body {
     display: none;
     position: absolute;
     background-color: #b9af7c;
-    margin-top: 60px;
-    -moz-margin-top: 105px;
+    margin-top: 3%;
 }
 
 .dropdown-content a {
@@ -136,6 +135,10 @@ body {
 }
 
 .right-nav a.mobile-only {
+    display: none;
+}
+
+.mobile-only {
     display: none;
 }
 
@@ -1129,6 +1132,12 @@ fieldset {
 /* SMART-PHONES */
 
 @media only screen and (min-width: 250px) and (max-width: 767px) {
+    .image-background {
+        background: url(images/responsive-min.jpg) no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100%;
+    }
+
     /*//////*/
     /*NAV-BAR*/
     /*//////*/
@@ -1262,10 +1271,6 @@ fieldset {
     /*ALBUMS*/
     /*//////*/
 
-    .albums h1 {
-        padding: 30px;
-    }
-
     .both-albums {
         display: flex;
         flex-direction: column;
@@ -1309,6 +1314,29 @@ fieldset {
         margin: 0 auto;
     }
 
+    .mobile-only {
+        display: block;
+        position: relative;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .halo {
+        position: absolute;
+        text-decoration: none;
+        padding: 7px 14px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        margin: 50px 0 0 0;
+        background-color: transparent;
+        transform: translateY(-200px);
+        transition: all 0.2s ease-in-out;
+        border: 1px solid black;
+        color: black;
+        top: 100px;
+        right: 170px;
+    }
+
     .hovereffect {
         width: 400px;
         height: 250px;
@@ -1320,12 +1348,16 @@ fieldset {
         height: 250px;
     }
     .bottom-part {
+        padding: 20px;
         height: 100%;
+    }
+    .h1-bottom-part {
+        text-align: center;
     }
 
     .insta-widget {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         margin-bottom: 40px;
     }
 
