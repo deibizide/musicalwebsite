@@ -1294,11 +1294,6 @@ fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100%;
-    }
-
-    .h1-portfolio p {
-        text-align: center;
     }
 
     .main-portfolio img {
@@ -1306,10 +1301,15 @@ fieldset {
         height: 250px;
         margin-left: 17%;
     }
+
     .h1-portfolio {
         display: flex;
         justify-content: center;
         padding-top: 40px;
+    }
+
+    .h1-portfolio p {
+        text-align: center;
     }
 
     .part-one-portfolio,
@@ -1319,27 +1319,25 @@ fieldset {
         align-items: center;
         padding-bottom: 1px;
     }
+    .hovereffect {
+        width: 400px;
+        height: 250px;
+        margin: 0 auto;
+    }
 
     .mobile-only {
-        padding: 50px;
+        margin-right: 10px;
+        padding: 30px;
         display: block;
-        position: relative;
         font-family: "Quicksand", sans-serif;
     }
 
     .link-porfolio-only-mobiles {
         text-decoration: none;
         text-transform: uppercase;
-        color: #fff;
         border: 1px solid black;
         color: black;
         padding: 20px;
-    }
-
-    .hovereffect {
-        width: 400px;
-        height: 250px;
-        margin: 0px 0px 60px 0px;
     }
 
     .hovereffect .overlay {
