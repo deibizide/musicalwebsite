@@ -936,7 +936,8 @@ fieldset {
         left: 0;
         right: 0;
         z-index: -1; /* needed to keep in the background */
-        background: url(images/responsive-min.jpg) center center;
+        background-color: black;
+        /* background: url(images/responsive-min.jpg) center center; */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1093,6 +1094,27 @@ fieldset {
     .project-description {
         margin-top: 0px;
         display: block;
+    }
+
+    .mobile-only {
+        position: relative;
+        display: block;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .link-porfolio-only-mobiles {
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid black;
+        color: black;
+        padding: 1.5rem;
+        bottom: 0;
+        top: 14rem;
+        right: 11rem;
+        font-size: 0.9rem;
+        align-items: center;
     }
 
     /* //////// */
@@ -1505,6 +1527,13 @@ fieldset {
         margin-bottom: 23rem;
     }
 }
+
+/* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
+/* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
+/* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
+/* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
+/* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
+/* THIS SECTION IS ONLY FOR HOVER PROPERTIES, I ORDER TO AVIOD HOVERS ON MEDIA QUERIES */
 
 @media only screen and (min-width: 1025px) {
     /* NAV-BAR */
