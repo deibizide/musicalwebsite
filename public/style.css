@@ -74,12 +74,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.right-nav a:hover {
-    text-decoration: none;
-    color: #b9af7c;
-    border: 1px solid #b9af7c;
-}
-
 .hb-button {
     float: right;
     background: #222;
@@ -923,10 +917,10 @@ fieldset {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .main-nav {
         display: flex;
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        height: 150px;
-        z-index: -5;
+        height: 170px;
+        font-size: 0.8rem;
     }
 
     .left-nav {
@@ -934,11 +928,11 @@ fieldset {
     }
 
     .right-nav {
-        margin-left: 12%;
+        /* margin-left: 12%; */
     }
 
     .right-nav a {
-        padding: 15px 25px;
+        padding: 0px 20px;
     }
 
     .links {
@@ -950,7 +944,7 @@ fieldset {
         height: 1px;
         position: relative;
         right: 40%;
-        margin-top: 45px;
+        margin-top: 3.5rem;
     }
 
     .main-font-awesome a {
@@ -968,6 +962,19 @@ fieldset {
     .square-box {
         width: 270px;
         height: 270px;
+    }
+
+    .right-nav a.mobile-only {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .dropdown i {
+        display: none;
     }
 
     /*//////*/
@@ -1472,6 +1479,13 @@ fieldset {
 }
 
 @media only screen and (min-width: 1025px) {
+    /* NAV-BAR */
+    .right-nav a:hover {
+        text-decoration: none;
+        color: #b9af7c;
+        border: 1px solid #b9af7c;
+    }
+
     /* INFO(CSS,JS,VUE.JS ETC...) */
     .image-container:hover .project-description {
         margin-top: 4rem;
