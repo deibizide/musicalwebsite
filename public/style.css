@@ -47,12 +47,13 @@ body {
 .right-nav {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .links {
     display: flex;
     flex-direction: row;
+    text-align: center;
 }
 
 .main-font-awesome {
@@ -69,7 +70,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: white;
-    padding: 9px 25px;
+    padding: 5px 18px;
     margin-right: 5px;
     border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -916,7 +917,8 @@ fieldset {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .image-background {
-        background: url(images/responsive-min.jpg);
+        /* background: url(images/responsive-min.jpg); */
+        background-color: black;
         -moz-background-size: 100%;
         -o-background-size: 100%;
         -webkit-background-size: 100%;
@@ -936,8 +938,7 @@ fieldset {
         left: 0;
         right: 0;
         z-index: -1; /* needed to keep in the background */
-        background-color: black;
-        /* background: url(images/responsive-min.jpg) center center; */
+        background: url(images/responsive-min.jpg) center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -948,8 +949,9 @@ fieldset {
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 170px;
+        height: 180px;
         font-size: 0.8rem;
+        padding-bottom: 20px;
     }
 
     .left-nav {
@@ -972,7 +974,7 @@ fieldset {
         width: 1px;
         height: 1px;
         position: relative;
-        right: 40%;
+        right: 31%;
         margin-top: 3.5rem;
     }
 
@@ -1314,6 +1316,7 @@ fieldset {
     .links {
         display: flex;
         flex-direction: column;
+        text-align: left;
     }
 
     .links a {
