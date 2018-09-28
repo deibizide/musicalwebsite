@@ -916,12 +916,27 @@ fieldset {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .image-background {
-        background: url(images/DSC_7264black-min-min.jpg);
+        background: url(images/responsive-min.jpg);
         -moz-background-size: 100%;
         -o-background-size: 100%;
         -webkit-background-size: 100%;
         background-size: 100%;
         background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .image-background:after {
+        content: "";
+        position: fixed; /* stretch a fixed position to the whole screen */
+        top: 0;
+        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+        left: 0;
+        right: 0;
+        z-index: -1; /* needed to keep in the background */
+        background: url(images/responsive-min.jpg) center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
