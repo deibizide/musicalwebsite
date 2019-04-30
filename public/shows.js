@@ -187,5 +187,342 @@ var tours = {
             venue: "Proxima",
             country: "PL"
         }
+    ],
+    //////////////////////////////////////////
+    ////////// MINI GERMAN TOUR 2019 ////////
+    //////////////////////////////////////////
+    miniGermanTour: [
+        {
+            date: "27.12.2018",
+            city: "Rostock",
+            venue: "M.A.U Club",
+            country: "Germany"
+        },
+        {
+            date: "28.12.2018",
+            city: "Jena",
+            venue: "Kassablanca",
+            country: "Germany"
+        },
+        {
+            date: "29.12.2018",
+            city: "Nuremberg",
+            venue: "Club Stereo",
+            country: "Germany"
+        },
+
+        {
+            date: "30.12.2018",
+            city: "Berlin",
+            venue: "Lido",
+            country: "Germany"
+        }
+    ],
+    //////////////////////////////////////////
+    ////////// INDIA/AUSTRALIA 2019 //////////
+    //////////////////////////////////////////
+    indiaAustralia: [
+        {
+            date: "10.01.2019",
+            city: "New Delhi",
+            venue: "Cafe Turquoise Cottage",
+            country: "India"
+        },
+        {
+            date: "12.01.2019",
+            city: "Mumbai",
+            venue: "Above The Habitat",
+            country: "India"
+        },
+        {
+            date: "13.01.2019",
+            city: "Bengaluru",
+            venue: "Fandom at Gilly's Redefined",
+            country: "India"
+        },
+
+        {
+            date: "17.01.2019",
+            city: "Guwahati",
+            venue: "Xtreme Sports bar & Grill",
+            country: "India"
+        },
+        {
+            date: "18.01.2019",
+            city: "Hyderabad",
+            venue: "The Moonshine Project",
+            country: "India"
+        },
+        {
+            date: "24.01.2019",
+            city: "Perth",
+            venue: "Badlands",
+            country: "Australia"
+        },
+        {
+            date: "25.01.2019",
+            city: "Adelaide",
+            venue: "Jive",
+            country: "Australia"
+        },
+
+        {
+            date: "26.01.2019",
+            city: "Melbourne",
+            venue: "Prog-Fest",
+            country: "Australia"
+        },
+        {
+            date: "27.01.2019",
+            city: "Sydney",
+            venue: "Prog-Fest",
+            country: "Australia"
+        },
+        {
+            date: "28.01.2019",
+            city: "Brisbane",
+            venue: "Prog-Fest",
+            country: "New Zealand"
+        },
+        {
+            date: "31.01.2019",
+            city: "Wellington",
+            venue: "Valhala",
+            country: "New Zealand"
+        },
+
+        {
+            date: "01.02.2019",
+            city: "Christchurch",
+            venue: "Club Tavern",
+            country: "New Zealand"
+        },
+        {
+            date: "02.02.2019",
+            city: "Auckland",
+            venue: "Galatos",
+            country: "New Zealand"
+        },
+
+        {
+            date: "16.02.2019",
+            city: "Haarlem",
+            venue: "Complexity Fest",
+            country: "Netherlands"
+        }
+    ],
+
+    //////////////////////////////////////////
+    ////////// EUROPE 2019 //////////
+    //////////////////////////////////////////
+    europe2019: [
+        {
+            date: "13.03.2019",
+            city: "Stuttgart",
+            venue: "Im Wizemann",
+            country: "Germany"
+        },
+        {
+            date: "14.03.2019",
+            city: "Geneva",
+            venue: "PTR/ L’Usine",
+            country: "Switzerland"
+        },
+        {
+            date: "15.03.2019",
+            city: "Lyon",
+            venue: "CCO",
+            country: "France"
+        },
+        {
+            date: "16.03.2019",
+            city: "Toulouse",
+            venue: "Rex",
+            country: "France"
+        },
+        {
+            date: "17.03.2019",
+            city: "Marseilles",
+            venue: "Les Pennes Mirabeau",
+            country: "France"
+        },
+        {
+            date: "18.03.2019",
+            city: "Colmar",
+            venue: "Le Grillen",
+            country: "France"
+        },
+        {
+            date: "19.03.2019",
+            city: "Bethune",
+            venue: "Le Poche",
+            country: "France"
+        },
+        {
+            date: "20.03.2019",
+            city: "Birmingham",
+            venue: "Mama Roux",
+            country: "UK"
+        },
+        {
+            date: "21.03.2019",
+            city: "Limerick",
+            venue: "Dolan’s Warehouse",
+            country: "Ireland"
+        },
+        {
+            date: "22.03.2019",
+            city: "Dublin",
+            venue: "Voodoo Lounge",
+            country: "Ireland"
+        },
+        {
+            date: "23.03.2019",
+            city: "Glasgow",
+            venue: "Audio",
+            country: "Scotland"
+        },
+        {
+            date: "24.03.2019",
+            city: "Leeds",
+            venue: "Brudenell Social Club",
+            country: "UK"
+        },
+        {
+            date: "25.03.2019",
+            city: "Antwerp",
+            venue: "Trix",
+            country: "Belgium"
+        },
+        {
+            date: "26.03.2019",
+            city: "Den Haag",
+            venue: "Paard",
+            country: "Netherlands"
+        },
+        {
+            date: "27.03.2019",
+            city: "Cologne",
+            venue: "Club Volta",
+            country: "Germany"
+        },
+        {
+            date: "28.03.2019",
+            city: "Leipzig",
+            venue: "Werk 2",
+            country: "Germany"
+        },
+        {
+            date: "29.03.2019",
+            city: "Poznan",
+            venue: "U Bazyla",
+            country: "Poland"
+        },
+        {
+            date: "29.03.2019",
+            city: "Bremen",
+            venue: "Tower",
+            country: "Germany"
+        },
+        {
+            date: "31.03.2019",
+            city: "Hamburg",
+            venue: "Logo",
+            country: "Germany"
+        },
+        {
+            date: "02.04.2019",
+            city: "Stockholm",
+            venue: "Klubben Fryshuset",
+            country: "Sweden"
+        },
+        {
+            date: "03.04.2019",
+            city: "Gothenburg",
+            venue: "Trådgärn",
+            country: "Sweden"
+        },
+        {
+            date: "04.04.2019",
+            city: "Drammen",
+            venue: "Galatos",
+            country: "Norway"
+        },
+        {
+            date: "05.04.2019",
+            city: "Hamar",
+            venue: "Gregers",
+            country: "Norway"
+        },
+        {
+            date: "06.04.2019",
+            city: "Stavanger",
+            venue: "Folken",
+            country: "Norway"
+        },
+        {
+            date: "07.04.2019",
+            city: "Aalborg",
+            venue: "1000Fryd",
+            country: "Denmark"
+        },
+        {
+            date: "08.04.2019",
+            city: "Copenhagen",
+            venue: "Vega",
+            country: "Denmark"
+        }
+
+    ],
+    //////////////////////////////////////////
+    ////////// SUMMER-FESTIVALS 2019 //////////
+    //////////////////////////////////////////
+
+    summerFestivals2019: [
+        {
+            date: "09.06.2019",
+            venue: "Rockfest",
+            country: "Finland"
+        },
+        {
+            date: "22.06.2019",
+            venue: "Hell Fest",
+            country: "France"
+        },
+        {
+            date: "30.06.2019",
+            venue: "With Full Force",
+            country: "Germany"
+        },
+        {
+            date: "05.07.2019",
+            venue: "Resurrection Fest 2019",
+            country: "Spain"
+        },
+        {
+            date: "03.07.2019",
+            venue: "Resurrection Fest 2019",
+            country: "Spain"
+        },
+        {
+            date: "07.08.2019",
+            venue: "Resurrection Fest 2019",
+            country: "Spain"
+        },
+        {
+            date: "10.08.2019",
+            venue: " Øya Festival",
+            country: "Norway"
+        },
+        {
+            date: "15.08.2019",
+            venue: "Summerbreeze Festival9",
+            country: "Germany"
+        },
+        {
+            date: "16.08.2019",
+            venue: "Arctangent",
+            country: "UK"
+        }
     ]
 };
