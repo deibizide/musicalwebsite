@@ -8,8 +8,8 @@ body {
 }
 
 .image-background {
-    /* background: url(images/theocean24_1-min.jpg) no-repeat center center fixed; */
-    background: url(images/flyer_david.jpg) no-repeat center center fixed;
+    background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
+    /* background: url(images/flyer_david.jpg) no-repeat center center fixed; */
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
