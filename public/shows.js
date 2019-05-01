@@ -7,66 +7,66 @@ var tours = {
             date: "14.4.2018",
             city: "Copenhagen",
             venue: "Vega",
-            country: "DK"
+            country: "Denmark"
         },
         {
             date: "21.4.2018",
             city: "Leipzig",
             venue: "UT Connewitz",
-            country: "DE"
+            country: "Germany"
         },
         {
             date: "04.5.2018",
             city: "Dortmund",
             venue: "FZW Club",
-            country: "DE"
+            country: "Germany"
         },
         {
             date: "05.5.2018",
             city: "Rambouillet",
             venue: "l'Usine a Chapeaux",
-            country: "FR"
+            country: "France"
         },
         {
             date: "06.5.2018",
             city: "Aarau",
             venue: "Flosserplatz",
-            country: "CH"
+            country: "Switzerland"
         },
 
         {
             date: "07.5.2018",
             city: "Nancy",
             venue: "915 Kaffe",
-            country: "FR"
+            country: "France"
         },
 
         {
             date: "08.5.2018",
             city: "Esch-sur-Alzette",
             venue: "Kulturfabrik",
-            country: "LU"
+            country: "Luxembourg"
         },
 
         {
             date: "09.5.2018",
             city: "Nijmegen",
             venue: "Doornroosje",
-            country: "NL"
+            country: "Netherlands"
         },
 
         {
             date: "10.5.2018",
             city: "Gießen",
             venue: "Post Valley Fest",
-            country: "DE"
+            country: "Germany"
         },
 
         {
             date: "11.5.2018",
             city: "Zottegem",
             venue: "Dunk!festival 2018",
-            country: "BE"
+            country: "Belgium"
         }
     ],
     //////////////////////////////////////////
@@ -77,7 +77,7 @@ var tours = {
             date: "31.10.2018",
             city: "Karlsruhe",
             venue: "Halloween Dudefest",
-            country: "DE"
+            country: "Germany"
         },
         {
             date: "01.11.2018",
@@ -95,27 +95,27 @@ var tours = {
             date: "04.11.2018",
             city: "Eindhoven",
             venue: "The Progressive Alliance",
-            country: "NL"
+            country: "Netherlands"
         },
         {
             date: "05.11.2018",
             city: "Münster",
             venue: "Sputnikhalle",
-            country: "DE"
+            country: "Germany"
         },
 
         {
             date: "06.11.2018",
             city: "Wiesbaden",
             venue: "Schlachthof",
-            country: "DE"
+            country: "Germany"
         },
 
         {
             date: "07.11.2018",
             city: "Sion",
             venue: "Le Port France",
-            country: "CH"
+            country: "Switzerland"
         },
 
         {
@@ -129,7 +129,7 @@ var tours = {
             date: "09.11.2018",
             city: "München",
             venue: "Strom",
-            country: "DE"
+            country: "Germany"
         },
 
         {

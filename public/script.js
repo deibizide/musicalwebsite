@@ -51,25 +51,26 @@ $(document).ready(function() {
             var city = tours[tour][i].city;
             var venue = tours[tour][i].venue;
             var country = tours[tour][i].country;
+            console.log(venue);
 
 
             splittedDate = dates.split(".").map(parseFloat);
 
             if(splittedDate[2] < curr_year) {
                 $(".past-shows").append(`
-              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+              <div class="dates"> ${dates} | ${venue} | ${city} | ${country} </div>
             `);
             }
             else if (splittedDate < curr_date) {
                 $(".past-shows").append(`
-              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+              <div class="dates"> ${dates} | ${venue} | ${city} | ${country} </div>
             `);
             } else if (
                 splittedDate[2] <= curr_year && splittedDate[1] < curr_Month
                 )
             {
                 $(".past-shows").append(`
-              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+              <div class="dates"> ${dates} | ${venue} | ${city} | ${country} </div>
             `);
             } else if (
                 splittedDate[2] === curr_year &&
@@ -77,14 +78,13 @@ $(document).ready(function() {
                 splittedDate[0] < curr_date
             ) {
                 $(".past-shows").append(`
-              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+              <div class="dates"> ${dates} | ${venue} | ${city} | ${country} </div>
             `);
             } else {
                 $(".shows").append(`
-              <div class="dates"> ${dates} | ${venue} | ${country} </div>
+              <div class="dates"> ${dates} | ${venue} | ${city} | ${country} </div>
             `);
             }
         }
     }
-    console.log(amountOfGigs);
 });

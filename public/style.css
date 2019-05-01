@@ -1515,9 +1515,14 @@ fieldset {
     /* ///////////// */ /* SHOWS */ /* ///////////// */
     /* ///////////// */ /* SHOWS */ /* ///////////// */
 
+    .main-shows {
+        position: inherit;
+    }
+
     .songkick {
         width: 80%;
         background-color: #f4f4ef;
+        margin-top: 50px;
     }
 
     .songkick-widget {
@@ -1525,14 +1530,9 @@ fieldset {
         border-radius: 10px;
     }
 
-    /* .shows {
-        margin-top: 5rem;
+    .footer-div {
+        position: inherit;
     }
-
-    .past-shows {
-        margin-top: 9rem;
-        margin-bottom: 23rem;
-    } */
 }
 
 /* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
