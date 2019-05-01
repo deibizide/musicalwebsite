@@ -8,7 +8,8 @@ body {
 }
 
 .image-background {
-    background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
+    /* background: url(images/theocean24_1-min.jpg) no-repeat center center fixed; */
+    background: url(images/flyer_david.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -403,10 +404,12 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
     background-color: #101010;
     color: #f4f4ef;
     font-family: "Quicksand", sans-serif;
+    position: absolute;
+    bottom: 0;
+    top: 80px;
 }
 
 .songkick {
@@ -414,6 +417,10 @@ footer {
     background-color: #f4f4ef;
 }
 
+.main-container-past-shows {
+    position: relative;
+    min-height: 100vh;
+}
 .shows,
 .past-shows {
     border: 1px solid #635d51;
@@ -453,7 +460,9 @@ footer {
 }
 
 .footer-div {
-    height: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* ///////////// */ /* PORTFOLIO */ /* ///////////// */

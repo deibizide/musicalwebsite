@@ -41,15 +41,17 @@ $(document).ready(function() {
     var curr_Month = d.getMonth() + 1;
     var curr_date = d.getDate();
     var todayDate = curr_date + "." + curr_Month + "." + curr_year;
+    let amountOfGigs = 0
     let splittedDate;
 
     for (var tour in tours) {
+        amountOfGigs += tours[tour].length
         for (let i = 0; i < tours[tour].length; i++) {
             var dates = tours[tour][i].date;
             var city = tours[tour][i].city;
             var venue = tours[tour][i].venue;
             var country = tours[tour][i].country;
-            console.log(splittedDate)
+
 
             splittedDate = dates.split(".").map(parseFloat);
 
@@ -84,4 +86,5 @@ $(document).ready(function() {
             }
         }
     }
+    console.log(amountOfGigs);
 });
