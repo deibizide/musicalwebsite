@@ -9,7 +9,6 @@ body {
 
 .image-background {
     background: url(images/theocean24_1-min.jpg) no-repeat center center fixed;
-    /* background: url(images/flyer_david.jpg) no-repeat center center fixed; */
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -404,6 +403,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
     background-color: #101010;
     color: #f4f4ef;
     font-family: "Quicksand", sans-serif;
@@ -421,6 +421,19 @@ footer {
     position: relative;
     min-height: 100vh;
 }
+
+.main-past-shows {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    color: #f4f4ef;
+    font-family: "Quicksand", sans-serif;
+}
+
 .shows,
 .past-shows {
     border: 1px solid #635d51;
@@ -430,9 +443,9 @@ footer {
     margin: 50px 0px 20px 0px;
 }
 
-.past-shows {
+/* .past-shows {
     margin-bottom: 23rem;
-}
+} */
 
 .dates {
     margin: 10px;
@@ -872,14 +885,14 @@ fieldset {
         width: 70%;
     }
 
-    .shows-past-div {
+    /* .shows-past-div {
         margin-bottom: 2.5rem;
     }
 
     .past-shows {
         margin-top: 4rem;
         margin-bottom: 23rem;
-    }
+    } */
 }
 
 /* IPAD */
@@ -1129,14 +1142,14 @@ fieldset {
         margin-top: 2.5rem;
     }
 
-    .shows-past-div {
+    /* .shows-past-div {
         margin-bottom: 2.5rem;
     }
 
     .past-shows {
         margin-top: 4rem;
         margin-bottom: 18rem;
-    }
+    } */
 
     /* //////// */
     /* MUSICIAN */
@@ -1514,14 +1527,14 @@ fieldset {
         border-radius: 10px;
     }
 
-    .shows {
+    /* .shows {
         margin-top: 5rem;
     }
 
     .past-shows {
         margin-top: 9rem;
         margin-bottom: 23rem;
-    }
+    } */
 }
 
 /* ///////////// */ /* ///////////// */ /* IMPORTANT */ /* ///////////// */ /* ///////////// */
