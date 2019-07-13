@@ -480,52 +480,56 @@ var tours = {
   summerFestivals2019: [
     {
       date: "09.06.2019",
+      city: "Hyvinkää",
       venue: "Rockfest",
       country: "Finland"
     },
     {
       date: "22.06.2019",
-      venue: "Hell Fest",
+      city: "Loire-Atlantique",
+      venue: "HellFest",
       country: "France"
     },
     {
       date: "30.06.2019",
+      city: "Löbnitz",
       venue: "With Full Force",
       country: "Germany"
     },
     {
       date: "05.07.2019",
-      venue: "Resurrection Fest 2019",
-      country: "Spain"
-    },
-    {
-      date: "03.07.2019",
+      city: "Viviero",
       venue: "Resurrection Fest 2019",
       country: "Spain"
     },
     {
       date: "13.07.2019",
+      city: "Bari",
       venue: "Casa delle Arti",
       country: "Italy"
     },
     {
       date: "07.08.2019",
+      city: "Jaroměř",
       venue: "Brutal Assault",
       country: "Czech Republic"
     },
     {
       date: "10.08.2019",
+      city: "Oslo",
       venue: "Øya Festival",
       country: "Norway"
     },
     {
       date: "16.08.2019",
+      city: "Bristol",
       venue: "Arctangent",
       country: "UK"
     },
     {
       date: "17.08.2019",
-      venue: "Summerbreeze Festival9",
+      city: "Dinkelsbühl",
+      venue: "Summerbreeze Festival",
       country: "Germany"
     }
   ],
