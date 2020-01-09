@@ -54,7 +54,6 @@ $(document).ready(function() {
       var country = tours[tour][i].country;
 
       const year = dates.split(".").pop();
-      console.log(year);
 
       if (year === "2019") {
         if (!countries[country]) {
@@ -93,5 +92,4 @@ $(document).ready(function() {
       }
     }
   }
-  console.log(countries);
 });
