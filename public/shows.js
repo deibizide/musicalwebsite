@@ -122,7 +122,7 @@ var tours = {
       date: "08.11.2018",
       city: "Milan",
       venue: "Santeria Social Club",
-      country: "IT"
+      country: "Italy"
     },
 
     {
@@ -136,56 +136,56 @@ var tours = {
       date: "11.11.2018",
       city: "Bratislava",
       venue: "Randal",
-      country: "SK"
+      country: "Slovakia"
     },
 
     {
       date: "12.11.2018",
       city: "Cluj-Napoca",
       venue: "Form Space",
-      country: "RO"
+      country: "Romania"
     },
 
     {
       date: "14.11.2018",
       city: "Bucharest",
       venue: "Control Club",
-      country: "RO"
+      country: "Romania"
     },
 
     {
       date: "15.11.2018",
       city: "Timisoara",
       venue: "Reflektor",
-      country: "RO"
+      country: "Romania"
     },
 
     {
       date: "16.11.2018",
       city: "Budapest",
       venue: "Blue Hell",
-      country: "HU"
+      country: "Hungary"
     },
 
     {
       date: "17.11.2018",
       city: "Zagreb",
       venue: "Mochvara",
-      country: "CR"
+      country: "Croatia"
     },
 
     {
       date: "18.11.2018",
       city: "Krakow",
       venue: "Zet Pe Te",
-      country: "PL"
+      country: "Poland"
     },
 
     {
       date: "19.11.2018",
       city: "Warsaw",
       venue: "Proxima",
-      country: "PL"
+      country: "Poland"
     }
   ],
   //////////////////////////////////////////
@@ -282,7 +282,7 @@ var tours = {
       date: "28.01.2019",
       city: "Brisbane",
       venue: "Prog-Fest",
-      country: "New Zealand"
+      country: "Australia"
     },
     {
       date: "31.01.2019",
@@ -819,6 +819,24 @@ var tours = {
       city: "Stockholm",
       venue: "Fryshuset Klubben",
       country: "Sweden"
+    },
+    {
+      date: "05.12.2019",
+      city: "Turku",
+      venue: "Logomo",
+      country: "Finland"
+    },
+    {
+      date: "06.12.2019",
+      city: "Rauha",
+      venue: "Holiday Club Saimaa Arena",
+      country: "Finland"
+    },
+    {
+      date: "07.12.2019",
+      city: "Helsinki",
+      venue: "Jäähalli",
+      country: "Finland"
     }
   ]
 };

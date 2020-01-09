@@ -43,6 +43,7 @@ $(document).ready(function() {
   var todayDate = curr_date + "." + curr_Month + "." + curr_year;
   let amountOfGigs = 0;
   let splittedDate;
+  const countries = {};
 
   for (var tour in tours) {
     amountOfGigs += tours[tour].length;
@@ -51,6 +52,17 @@ $(document).ready(function() {
       var city = tours[tour][i].city;
       var venue = tours[tour][i].venue;
       var country = tours[tour][i].country;
+
+      const year = dates.split(".").pop();
+      console.log(year);
+
+      if (year === "2019") {
+        if (!countries[country]) {
+          countries[country] = 1;
+        } else {
+          countries[country] += 1;
+        }
+      }
 
       splittedDate = dates.split(".").map(parseFloat);
 
@@ -81,4 +93,5 @@ $(document).ready(function() {
       }
     }
   }
+  console.log(countries);
 });
