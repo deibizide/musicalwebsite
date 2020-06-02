@@ -45,7 +45,8 @@ $(document).ready(function() {
   let splittedDate;
   const countries = {};
 
-  for (var tour in tours) {
+  for (var tour in tours) {  
+      
     amountOfGigs += tours[tour].length;
     for (let i = 0; i < tours[tour].length; i++) {
       var dates = tours[tour][i].date;
