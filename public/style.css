@@ -1005,25 +1005,20 @@ fieldset {
     /*ALBUMS*/
     /*//////*/
 
-    .albums h1 {
-        padding: 1.25rem;
+    .albums {
+        padding: 2.5rem;
     }
 
-    .both-albums iframe {
-        width: 230px;
-        height: 230px;
+    .both-albums {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .albums img {
-        width: 230px;
-        height: 230px;
-        margin: 0 0 1.8rem 0;
-    }
-
-    .phanerozoic,
-    .obsidian,
-    .rhyacian {
-        margin: 2%;
+        width: 300px;
+        height: 300px;
+        margin: -30px 50px 50px 50px;
     }
 
     /*///////*/
@@ -1031,10 +1026,9 @@ fieldset {
     /*///////*/
 
     .main-portfolio {
-        justify-content: center;
-        flex-wrap: wrap;
         display: flex;
-        padding: 1rem;
+        align-items: center;
+        flex-direction: column;
     }
 
     .main-portfolio img {
@@ -1059,7 +1053,8 @@ fieldset {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 1px;
+        /* padding-bottom: 100px; */
+        margin-top: 0px;
     }
     .hovereffect {
         width: 100%;
