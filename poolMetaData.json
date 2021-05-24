@@ -1,24 +1,6 @@
 {
-   "name":"Alas Cardano Pool 🐝",
-   "description":"We are a small team of Web Developers from Germany (Berlin)",
-   "ticker":"ALAS",
-   "homepage":"https://alascardanopool.com/",
-   "info":{
-      "location":"Berlin, Germany",
-      "social":{
-         "github_handle":"deibizide"
-      },
-      "about":{
-         "me":"Small team of Web Developers from Germany (Berlin)",
-         "server":"Linux(Ubuntu), Hosted at Digital Ocean",
-         "company":"Alas Cardano"
-      }
-   },
-   "my-pool-ids":{
-      "0":"pool1v4apprjghtey2w0gwcq49fnttrzd6q5832p7gxa9ckgvsjvjc06"
-   },
-   "when-satured-then-recommend":{
-      "0":"pool1ruq6tvalrt7uu4u2j9eugvf0h9z00yjggagpyd0qjmmywa6za7y",
-      "1":"pool1tx6e7gewsrcceejwpa69vrhlhay6862amaks095pmw9jxulwhvx"
-   }
+   "name": "Alas Cardano Pool",
+   "description": "We are a small team of Web Developers from Germany (Berlin), we believe in a decentralized world, feel free to come and join us.",
+   "ticker": "ALAS",
+   "homepage": "https://davidramis.com/"
 }
